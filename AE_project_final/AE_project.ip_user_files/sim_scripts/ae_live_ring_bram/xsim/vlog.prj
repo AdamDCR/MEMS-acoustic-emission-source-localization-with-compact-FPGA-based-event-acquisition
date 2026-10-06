@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../AE_project.gen/sources_1/ip/ae_live_ring_bram/sim/ae_live_ring_bram.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

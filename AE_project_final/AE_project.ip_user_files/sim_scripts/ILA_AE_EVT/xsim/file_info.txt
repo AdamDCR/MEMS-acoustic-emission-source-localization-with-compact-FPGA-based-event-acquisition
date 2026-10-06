@@ -1,0 +1,2 @@
+ILA_AE_EVT.v,verilog,xil_defaultlib,../../../../AE_project.gen/sources_1/ip/ILA_AE_EVT/sim/ILA_AE_EVT.v,incdir="../../../../AE_project.gen/sources_1/ip/ILA_AE_EVT/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

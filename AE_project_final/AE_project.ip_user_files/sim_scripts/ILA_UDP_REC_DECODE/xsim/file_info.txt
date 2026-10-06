@@ -1,0 +1,2 @@
+ILA_UDP_REC_DECODE.v,verilog,xil_defaultlib,../../../../AE_project.gen/sources_1/ip/ILA_UDP_REC_DECODE/sim/ILA_UDP_REC_DECODE.v,incdir="../../../../AE_project.gen/sources_1/ip/ILA_UDP_REC_DECODE/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

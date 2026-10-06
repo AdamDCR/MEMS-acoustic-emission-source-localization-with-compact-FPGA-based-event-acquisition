@@ -1,0 +1,38 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[10]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                    udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[1]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[22]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[27]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[11]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[13]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[24]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                        udp_event_sensor_tx_inst/event_done_ok_sys_m_reg/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[14]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[16]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[25]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                    udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[2]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                    udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[3]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                    udp_event_sensor_tx_inst/event_done_toggle_sys_m_reg/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                    udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[0]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                    udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[5]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[12]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                    udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[8]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[30]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[31]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[20]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[26]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[18]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[17]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[23]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[19]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                    udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[4]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[15]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[29]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[21]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                   udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[28]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                    udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[7]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                    udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[6]/D|
+| clk_125M_system_clk_module |sys_clk_system_clk_module |                                                    udp_event_sensor_tx_inst/event_done_seq_sys_m_reg[9]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

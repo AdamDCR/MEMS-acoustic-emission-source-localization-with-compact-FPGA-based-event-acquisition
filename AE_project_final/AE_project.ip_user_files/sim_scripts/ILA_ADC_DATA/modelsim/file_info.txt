@@ -1,0 +1,6 @@
+xpm_cdc.sv,systemverilog,xpm,E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../AE_project.gen/sources_1/ip/ILA_ADC_DATA/hdl/verilog"
+xpm_memory.sv,systemverilog,xpm,E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../AE_project.gen/sources_1/ip/ILA_ADC_DATA/hdl/verilog"
+xpm_fifo.sv,systemverilog,xpm,E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv,incdir="../../../../AE_project.gen/sources_1/ip/ILA_ADC_DATA/hdl/verilog"
+xpm_VCOMP.vhd,vhdl,xpm,E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../AE_project.gen/sources_1/ip/ILA_ADC_DATA/hdl/verilog"
+ILA_ADC_DATA.v,verilog,xil_defaultlib,../../../../AE_project.gen/sources_1/ip/ILA_ADC_DATA/sim/ILA_ADC_DATA.v,incdir="../../../../AE_project.gen/sources_1/ip/ILA_ADC_DATA/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

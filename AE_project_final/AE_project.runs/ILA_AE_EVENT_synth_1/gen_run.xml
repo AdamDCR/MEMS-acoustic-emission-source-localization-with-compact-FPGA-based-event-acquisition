@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="ILA_AE_EVENT_synth_1" LaunchPart="xc7a200tfbg484-2" LaunchTime="1779010921">
+  <File Type="PA-TCL" Name="ILA_AE_EVENT.tcl"/>
+  <File Type="REPORTS-TCL" Name="ILA_AE_EVENT_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ILA_AE_EVENT.vds"/>
+  <File Type="RDS-UTIL" Name="ILA_AE_EVENT_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ILA_AE_EVENT_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ILA_AE_EVENT.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ILA_AE_EVENT">
+    <File Path="$PSRCDIR/sources_1/ip/ILA_AE_EVENT/ILA_AE_EVENT.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ILA_AE_EVENT"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ILA_AE_EVENT">
+    <File Path="$PSRCDIR/sources_1/ip/ILA_AE_EVENT/ILA_AE_EVENT.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ILA_AE_EVENT"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

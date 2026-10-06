@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../AE_project.gen/sources_1/ip/ae_frame_bank_bram/sim/ae_frame_bank_bram.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

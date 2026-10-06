@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/AE_project/FPGA/AE_project/AE_project.hw/hw_1/wave/hw_ila_data_5/hw_ila_data_5.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="14fs"></ZoomEndTime>
+      <Cursor1Time time="860fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="220"></NameColumnWidth>
+      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/adc_mem_reg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/adc_mem_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_mem_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/adc_spi_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/adc_spi_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_spi_addr[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/adc_spi_csn" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/adc_spi_csn</obj_property>
+      <obj_property name="ObjectShortName">adc_spi_csn</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/adc_spi_sck" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/adc_spi_sck</obj_property>
+      <obj_property name="ObjectShortName">adc_spi_sck</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/init_error" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/init_error</obj_property>
+      <obj_property name="ObjectShortName">init_error</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/reg_data_out" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/reg_data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_data_out[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/spi_addr_num" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/spi_addr_num[5:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_addr_num[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/spi_init_done" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">adc_data_preprocess_inst/get_adc_data_inst1/adc_drive_inst/spi_init_done</obj_property>
+      <obj_property name="ObjectShortName">spi_init_done</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

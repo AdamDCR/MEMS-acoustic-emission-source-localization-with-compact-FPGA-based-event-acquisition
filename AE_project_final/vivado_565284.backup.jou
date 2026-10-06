@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 13 19:59:12 2026
+# Process ID: 565284
+# Current directory: E:/AE_project/FPGA/AE_project
+# Command line: vivado.exe -mode batch -source E:\AE_project\FPGA\AE_project\run_top_elab_check.tcl
+# Log file: E:/AE_project/FPGA/AE_project/vivado.log
+# Journal file: E:/AE_project/FPGA/AE_project\vivado.jou
+#-----------------------------------------------------------
+source {E:\AE_project\FPGA\AE_project\run_top_elab_check.tcl}

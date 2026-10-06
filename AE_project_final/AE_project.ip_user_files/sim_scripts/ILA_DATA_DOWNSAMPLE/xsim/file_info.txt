@@ -1,0 +1,2 @@
+ILA_DATA_DOWNSAMPLE.v,verilog,xil_defaultlib,../../../../AE_project.gen/sources_1/ip/ILA_DATA_DOWNSAMPLE/sim/ILA_DATA_DOWNSAMPLE.v,incdir="../../../../AE_project.gen/sources_1/ip/ILA_DATA_DOWNSAMPLE/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

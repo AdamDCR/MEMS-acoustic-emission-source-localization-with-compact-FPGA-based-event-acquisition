@@ -1,0 +1,3 @@
+adc_dclk_in_clk_wiz.v,verilog,xil_defaultlib,../../../../AE_project.gen/sources_1/ip/adc_dclk_in/adc_dclk_in_clk_wiz.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+adc_dclk_in.v,verilog,xil_defaultlib,../../../../AE_project.gen/sources_1/ip/adc_dclk_in/adc_dclk_in.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+glbl.v,Verilog,xil_defaultlib,glbl.v

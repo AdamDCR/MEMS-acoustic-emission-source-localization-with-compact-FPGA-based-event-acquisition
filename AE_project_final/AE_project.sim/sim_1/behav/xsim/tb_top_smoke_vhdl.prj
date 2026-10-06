@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/sim/fir_500k_lp.vhd" \
+
+# Do not sort compile order
+nosort

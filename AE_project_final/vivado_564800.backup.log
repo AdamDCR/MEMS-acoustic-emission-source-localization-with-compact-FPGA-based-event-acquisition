@@ -1,0 +1,2133 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 13 20:02:26 2026
+# Process ID: 564800
+# Current directory: E:/AE_project/FPGA/AE_project
+# Command line: vivado.exe -mode batch -source E:\AI\check_ae_top_rtl_elab.tcl
+# Log file: E:/AE_project/FPGA/AE_project/vivado.log
+# Journal file: E:/AE_project/FPGA/AE_project\vivado.jou
+#-----------------------------------------------------------
+source {E:\AI\check_ae_top_rtl_elab.tcl}
+# open_project {E:/AE_project/FPGA/AE_project/AE_project.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/1.tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1121.328 ; gain = 0.000
+# set_property top top [get_filesets sources_1]
+# update_compile_order -fileset sources_1
+# synth_design -rtl -name ae_top_rtl_elab -top top -part xc7a200tfbg484-2
+Command: synth_design -rtl -name ae_top_rtl_elab -top top -part xc7a200tfbg484-2
+Starting synth_design
+INFO: [Device 21-403] Loading part xc7a200tfbg484-2
+WARNING: [Synth 8-2507] parameter declaration becomes local in get_adc_data with formal parameter declaration list [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/get_adc_data.v:62]
+WARNING: [Synth 8-2507] parameter declaration becomes local in get_adc_data with formal parameter declaration list [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/get_adc_data.v:63]
+WARNING: [Synth 8-2507] parameter declaration becomes local in get_adc_data with formal parameter declaration list [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/get_adc_data.v:64]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1234.379 ; gain = 113.051
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/top.v:22]
+	Parameter BOARD_MAC bound to: 48'b000100100011010001010110011110001001101010111100 
+	Parameter BOARD_IP bound to: -1062705942 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062706031 - type: integer 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter RGMII_TXC_DELAY_MODE bound to: 1 - type: integer 
+	Parameter CLK_FRE bound to: 200 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter SYSTEM_FREQ bound to: 200 - type: integer 
+	Parameter SIM_AXI_MEM bound to: 0 - type: integer 
+	Parameter SIM_SENSOR_STUB bound to: 0 - type: integer 
+	Parameter SIM_ADC_PREPROCESS_STUB bound to: 0 - type: integer 
+	Parameter AE_FRAME_SAMPLES bound to: 8192 - type: integer 
+	Parameter AE_PRE_SAMPLES bound to: 4096 - type: integer 
+	Parameter AE_POST_SAMPLES bound to: 4096 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SEND bound to: 1 - type: integer 
+	Parameter WAIT bound to: 2 - type: integer 
+	Parameter UDP_IDLE bound to: 1 - type: integer 
+	Parameter UDP_SEND bound to: 2 - type: integer 
+	Parameter UDP_WAIT bound to: 3 - type: integer 
+	Parameter LED_100MS_CYCLES bound to: 20000000 - type: integer 
+	Parameter LED_1S_CYCLES bound to: 200000000 - type: integer 
+	Parameter LED_2S_CYCLES bound to: 400000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'adc_data_preprocess' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_data_preprocess.v:29]
+	Parameter ADC1_DEBUG_ILA bound to: 0 - type: integer 
+	Parameter ADC2_DEBUG_ILA bound to: 0 - type: integer 
+	Parameter INPUT_IS_OFFSET_BINARY bound to: 0 - type: integer 
+	Parameter FIR_OUT_SHIFT bound to: 15 - type: integer 
+	Parameter STARTUP_WAIT_CYCLES bound to: 16 - type: integer 
+	Parameter PRELOAD_CYCLES bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'get_adc_data' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/get_adc_data.v:23]
+	Parameter DEBUG_ILA bound to: 0 - type: integer 
+	Parameter CLK_FRE bound to: 200000000 - type: integer 
+	Parameter ADC_SAMPLE_RATE bound to: 40 - type: integer 
+	Parameter FRAME_PATTERN bound to: 14'b11111110000000 
+	Parameter IO_RST_RELEASE_US bound to: 50 - type: integer 
+	Parameter CLK_RST_RELEASE_US bound to: 40 - type: integer 
+	Parameter STANDBY_WAIT_US bound to: 50 - type: integer 
+	Parameter CLK_RST_CYCLES bound to: 8000 - type: integer 
+	Parameter IO_RST_CYCLES bound to: 10000 - type: integer 
+	Parameter ST_IDLE bound to: 4'b0001 
+	Parameter ST_WAIT bound to: 4'b0010 
+	Parameter ST_CHECK bound to: 4'b0100 
+	Parameter ST_DONE bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'iserdes' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/iserdes.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32998]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32998]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000001 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter DEF_VAL bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (2#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:38620]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 14 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b1 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (3#1) [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:38620]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE2__parameterized0' [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:38620]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 14 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b1 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2__parameterized0' (3#1) [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:38620]
+INFO: [Synth 8-6155] done synthesizing module 'iserdes' (4#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/iserdes.v:3]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (5#1) [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+INFO: [Synth 8-6157] synthesizing module 'adc_drive' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_drive.v:4]
+	Parameter DEBUG_ILA bound to: 0 - type: integer 
+	Parameter SYS_CLK_HZ bound to: 200000000 - type: integer 
+	Parameter SPI_CLK_HZ bound to: 20000000 - type: integer 
+	Parameter SPI_DIV bound to: 5 - type: integer 
+	Parameter WRITE bound to: 1'b0 
+	Parameter READ bound to: 1'b1 
+	Parameter STEP_MAX bound to: 6'b100000 
+	Parameter ST_IDLE bound to: 2'b00 
+	Parameter ST_LOW bound to: 2'b01 
+	Parameter ST_HIGH bound to: 2'b10 
+	Parameter ST_POST bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_drive.v:242]
+INFO: [Synth 8-226] default block is never used [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_drive.v:307]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (6#1) [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-6155] done synthesizing module 'adc_drive' (7#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_drive.v:4]
+INFO: [Synth 8-6157] synthesizing module 'adc_dclk_in' [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/adc_dclk_in_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adc_dclk_in' (8#1) [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/adc_dclk_in_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'get_adc_data' (9#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/get_adc_data.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adc_filter_chain' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_chain.v:34]
+	Parameter INPUT_IS_OFFSET_BINARY bound to: 0 - type: integer 
+	Parameter FIR_OUT_SHIFT bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'adc_filter_8ch' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_8ch.v:1]
+	Parameter INPUT_IS_OFFSET_BINARY bound to: 0 - type: integer 
+	Parameter FIR_OUT_SHIFT bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'adc_filter_channel' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_channel.v:1]
+	Parameter INPUT_IS_OFFSET_BINARY bound to: 0 - type: integer 
+	Parameter FIR_OUT_SHIFT bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'adc_filter_adc14_to_s16' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_adc14_to_s16.v:1]
+	Parameter INPUT_IS_OFFSET_BINARY bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adc_filter_adc14_to_s16' (10#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_adc14_to_s16.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adc_filter_iir_hp4_10k_40m' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_iir_hp4_10k_40m.v:1]
+	Parameter SEC0_B0 bound to: 1071540396 - type: integer 
+	Parameter SEC0_B1 bound to: -2143080791 - type: integer 
+	Parameter SEC0_B2 bound to: 1071540396 - type: integer 
+	Parameter SEC0_FB1 bound to: 2144369035 - type: integer 
+	Parameter SEC0_FB2 bound to: -1070629856 - type: integer 
+	Parameter SEC1_B0 bound to: 1073741824 - type: integer 
+	Parameter SEC1_B1 bound to: -2147483648 - type: integer 
+	Parameter SEC1_B2 bound to: 1073741824 - type: integer 
+	Parameter SEC1_FB1 bound to: 2146190886 - type: integer 
+	Parameter SEC1_FB2 bound to: -1072451710 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'adc_filter_iir_biquad_q2_30' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_iir_biquad_q2_30.v:3]
+	Parameter B0 bound to: 1071540396 - type: integer 
+	Parameter B1 bound to: -2143080791 - type: integer 
+	Parameter B2 bound to: 1071540396 - type: integer 
+	Parameter FB1 bound to: 2144369035 - type: integer 
+	Parameter FB2 bound to: -1070629856 - type: integer 
+	Parameter STATE_FRAC bound to: 18 - type: integer 
+	Parameter DATA_W bound to: 32 - type: integer 
+	Parameter COEF_W bound to: 32 - type: integer 
+	Parameter COEF_FRAC bound to: 30 - type: integer 
+	Parameter STATE_GUARD bound to: 8 - type: integer 
+	Parameter STATE_W bound to: 58 - type: integer 
+	Parameter ACC_W bound to: 94 - type: integer 
+	Parameter S32_MAX_EXT bound to: 94'sb0000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111 
+	Parameter S32_MIN_EXT bound to: 94'sb1111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000 
+	Parameter SSTATE_MAX_EXT bound to: 94'sb0000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111 
+	Parameter SSTATE_MIN_EXT bound to: 94'sb1111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'adc_filter_iir_biquad_q2_30' (11#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_iir_biquad_q2_30.v:3]
+INFO: [Synth 8-6157] synthesizing module 'adc_filter_iir_biquad_q2_30__parameterized0' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_iir_biquad_q2_30.v:3]
+	Parameter B0 bound to: 1073741824 - type: integer 
+	Parameter B1 bound to: -2147483648 - type: integer 
+	Parameter B2 bound to: 1073741824 - type: integer 
+	Parameter FB1 bound to: 2146190886 - type: integer 
+	Parameter FB2 bound to: -1072451710 - type: integer 
+	Parameter STATE_FRAC bound to: 18 - type: integer 
+	Parameter DATA_W bound to: 32 - type: integer 
+	Parameter COEF_W bound to: 32 - type: integer 
+	Parameter COEF_FRAC bound to: 30 - type: integer 
+	Parameter STATE_GUARD bound to: 8 - type: integer 
+	Parameter STATE_W bound to: 58 - type: integer 
+	Parameter ACC_W bound to: 94 - type: integer 
+	Parameter S32_MAX_EXT bound to: 94'sb0000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111 
+	Parameter S32_MIN_EXT bound to: 94'sb1111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000 
+	Parameter SSTATE_MAX_EXT bound to: 94'sb0000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111 
+	Parameter SSTATE_MIN_EXT bound to: 94'sb1111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'adc_filter_iir_biquad_q2_30__parameterized0' (11#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_iir_biquad_q2_30.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'adc_filter_iir_hp4_10k_40m' (12#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_iir_hp4_10k_40m.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adc_filter_fir_500k_lp_wrap' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_fir_500k_lp_wrap.v:1]
+	Parameter FIR_OUT_SHIFT bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fir_500k_lp' [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/fir_500k_lp_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fir_500k_lp' (13#1) [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/fir_500k_lp_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc_filter_fir_500k_lp_wrap' (14#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_fir_500k_lp_wrap.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adc_filter_channel' (15#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_channel.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adc_filter_8ch' (16#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_8ch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adc_filter_chain' (17#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_filter_chain.v:34]
+INFO: [Synth 8-6157] synthesizing module 'adc_data_sync' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_data_sync.v:8]
+	Parameter ADC_CH_PER_DEV bound to: 8 - type: integer 
+	Parameter ADC_OUT_W bound to: 16 - type: integer 
+	Parameter PACK_W bound to: 128 - type: integer 
+	Parameter STARTUP_WAIT_CYCLES bound to: 16 - type: integer 
+	Parameter PRELOAD_CYCLES bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2142]
+	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 64 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0000 - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_ASYNC bound to: 16'b0000000000000000 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+	Parameter COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 64 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0000 - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 2 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 64 - type: integer 
+	Parameter FIFO_SIZE bound to: 8192 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 7 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 6 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 6 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 6 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b0 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter READ_MODE_LL bound to: 1 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 7 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 59 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 59 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 7 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 7 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0000000000000000 
+	Parameter EN_OF bound to: 1'b0 
+	Parameter EN_PF bound to: 1'b0 
+	Parameter EN_WDC bound to: 1'b0 
+	Parameter EN_AF bound to: 1'b0 
+	Parameter EN_WACK bound to: 1'b0 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b0 
+	Parameter EN_PE bound to: 1'b0 
+	Parameter EN_RDC bound to: 1'b0 
+	Parameter EN_AE bound to: 1'b0 
+	Parameter EN_DVLD bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 8192 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 2 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 128 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 128 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 6 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 128 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 128 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 6 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 128 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 128 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 128 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 128 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 64 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 128 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 128 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: no - type: string 
+	Parameter rsta_loop_iter bound to: 128 - type: integer 
+	Parameter rstb_loop_iter bound to: 128 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 128 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (18#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (19#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+	Parameter REG_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (20#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (20#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+	Parameter REG_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (20#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (20#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
+	Parameter RST_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (21#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (22#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+	Parameter COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst__parameterized0' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter DEF_VAL bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst__parameterized0' (22#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (23#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+	Parameter COUNTER_WIDTH bound to: 7 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (23#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+	Parameter COUNTER_WIDTH bound to: 6 - type: integer 
+	Parameter RESET_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (23#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+	Parameter COUNTER_WIDTH bound to: 6 - type: integer 
+	Parameter RESET_VALUE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (23#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (24#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (25#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2142]
+INFO: [Synth 8-6155] done synthesizing module 'adc_data_sync' (26#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_data_sync.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'adc_data_preprocess' (27#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_data_process/adc_data_preprocess.v:29]
+INFO: [Synth 8-6157] synthesizing module 'sensor' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/sensor.v:20]
+	Parameter CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter I2C_FREQ_HZ bound to: 100000 - type: integer 
+	Parameter LSM6_SA0_HIGH bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'ds18b20_driver' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ds18b20_driver.v:9]
+	Parameter CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter MS_DIV bound to: 200000 - type: integer 
+	Parameter S_PWRUP bound to: 4'b0000 
+	Parameter S_RST1 bound to: 4'b0001 
+	Parameter S_SKIP1 bound to: 4'b0010 
+	Parameter S_CONV bound to: 4'b0011 
+	Parameter S_WAIT bound to: 4'b0100 
+	Parameter S_RST2 bound to: 4'b0101 
+	Parameter S_SKIP2 bound to: 4'b0110 
+	Parameter S_RDCMD bound to: 4'b0111 
+	Parameter S_RDL bound to: 4'b1000 
+	Parameter S_RDM bound to: 4'b1001 
+	Parameter S_PARSE bound to: 4'b1010 
+INFO: [Synth 8-6157] synthesizing module 'onewire_byte_ctrl' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/onewire_byte_ctrl.v:14]
+	Parameter CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter US_DIV bound to: 200 - type: integer 
+	Parameter S_IDLE bound to: 4'b0000 
+	Parameter S_RST_LOW bound to: 4'b0001 
+	Parameter S_RST_REL bound to: 4'b0010 
+	Parameter S_RST_WAIT bound to: 4'b0011 
+	Parameter S_WR_LOW bound to: 4'b0100 
+	Parameter S_WR_SLOT bound to: 4'b0101 
+	Parameter S_RD_LOW bound to: 4'b0110 
+	Parameter S_RD_SAMPLE bound to: 4'b0111 
+	Parameter S_RD_SLOT bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'onewire_byte_ctrl' (28#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/onewire_byte_ctrl.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ds18b20_driver' (29#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ds18b20_driver.v:9]
+INFO: [Synth 8-6157] synthesizing module 'aht20_driver' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/aht20_driver.v:19]
+	Parameter CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter I2C_FREQ_HZ bound to: 100000 - type: integer 
+	Parameter DEV_W bound to: 8'b01110000 
+	Parameter DEV_R bound to: 8'b01110001 
+	Parameter MS_DIV bound to: 200000 - type: integer 
+	Parameter S_PWRUP bound to: 6'b000000 
+	Parameter S_I_START bound to: 6'b000001 
+	Parameter S_I_ADDR bound to: 6'b000010 
+	Parameter S_I_CMD bound to: 6'b000011 
+	Parameter S_I_D1 bound to: 6'b000100 
+	Parameter S_I_D2 bound to: 6'b000101 
+	Parameter S_I_STOP bound to: 6'b000110 
+	Parameter S_I_WAIT bound to: 6'b000111 
+	Parameter S_M_START bound to: 6'b001000 
+	Parameter S_M_ADDR bound to: 6'b001001 
+	Parameter S_M_CMD bound to: 6'b001010 
+	Parameter S_M_D1 bound to: 6'b001011 
+	Parameter S_M_D2 bound to: 6'b001100 
+	Parameter S_M_STOP bound to: 6'b001101 
+	Parameter S_M_WAIT bound to: 6'b001110 
+	Parameter S_R_START bound to: 6'b001111 
+	Parameter S_R_ADDR bound to: 6'b010000 
+	Parameter S_R_B0 bound to: 6'b010001 
+	Parameter S_R_B1 bound to: 6'b010010 
+	Parameter S_R_B2 bound to: 6'b010011 
+	Parameter S_R_B3 bound to: 6'b010100 
+	Parameter S_R_B4 bound to: 6'b010101 
+	Parameter S_R_B5 bound to: 6'b010110 
+	Parameter S_R_B6 bound to: 6'b010111 
+	Parameter S_R_STOP bound to: 6'b011000 
+	Parameter S_PARSE bound to: 6'b011001 
+INFO: [Synth 8-6157] synthesizing module 'i2c_byte_ctrl' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/i2c_byte_ctrl.v:22]
+	Parameter CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter I2C_FREQ_HZ bound to: 100000 - type: integer 
+	Parameter HALF_DIV bound to: 1000 - type: integer 
+	Parameter S_IDLE bound to: 4'b0000 
+	Parameter S_START_0 bound to: 4'b0001 
+	Parameter S_START_1 bound to: 4'b0010 
+	Parameter S_STOP_0 bound to: 4'b0011 
+	Parameter S_STOP_1 bound to: 4'b0100 
+	Parameter S_WR_BIT_0 bound to: 4'b0101 
+	Parameter S_WR_BIT_1 bound to: 4'b0110 
+	Parameter S_WR_ACK_0 bound to: 4'b0111 
+	Parameter S_WR_ACK_1 bound to: 4'b1000 
+	Parameter S_RD_BIT_0 bound to: 4'b1001 
+	Parameter S_RD_BIT_1 bound to: 4'b1010 
+	Parameter S_RD_ACK_0 bound to: 4'b1011 
+	Parameter S_RD_ACK_1 bound to: 4'b1100 
+INFO: [Synth 8-226] default block is never used [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/i2c_byte_ctrl.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_byte_ctrl' (30#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/i2c_byte_ctrl.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'aht20_driver' (31#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/aht20_driver.v:19]
+INFO: [Synth 8-6157] synthesizing module 'lsm6ds3tr_driver' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/lsm6ds3tr_driver.v:21]
+	Parameter CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter I2C_FREQ_HZ bound to: 100000 - type: integer 
+	Parameter SA0_HIGH bound to: 0 - type: integer 
+	Parameter DEV_W bound to: 8'b11010100 
+	Parameter DEV_R bound to: 8'b11010101 
+	Parameter MS_DIV bound to: 200000 - type: integer 
+	Parameter REG_CTRL2_G bound to: 8'b00010001 
+	Parameter REG_CTRL3_C bound to: 8'b00010010 
+	Parameter REG_OUTX_L_G bound to: 8'b00100010 
+	Parameter S_PWRUP bound to: 6'b000000 
+	Parameter S_CFG1_ST bound to: 6'b000001 
+	Parameter S_CFG1_AW bound to: 6'b000010 
+	Parameter S_CFG1_RG bound to: 6'b000011 
+	Parameter S_CFG1_DT bound to: 6'b000100 
+	Parameter S_CFG1_SP bound to: 6'b000101 
+	Parameter S_CFG2_ST bound to: 6'b000110 
+	Parameter S_CFG2_AW bound to: 6'b000111 
+	Parameter S_CFG2_RG bound to: 6'b001000 
+	Parameter S_CFG2_DT bound to: 6'b001001 
+	Parameter S_CFG2_SP bound to: 6'b001010 
+	Parameter S_WAIT bound to: 6'b001011 
+	Parameter S_RD_ST1 bound to: 6'b001100 
+	Parameter S_RD_AW bound to: 6'b001101 
+	Parameter S_RD_RG bound to: 6'b001110 
+	Parameter S_RD_ST2 bound to: 6'b001111 
+	Parameter S_RD_AR bound to: 6'b010000 
+	Parameter S_RD_B0 bound to: 6'b010001 
+	Parameter S_RD_B1 bound to: 6'b010010 
+	Parameter S_RD_B2 bound to: 6'b010011 
+	Parameter S_RD_B3 bound to: 6'b010100 
+	Parameter S_RD_B4 bound to: 6'b010101 
+	Parameter S_RD_B5 bound to: 6'b010110 
+	Parameter S_RD_SP bound to: 6'b010111 
+	Parameter S_PARSE bound to: 6'b011000 
+INFO: [Synth 8-6155] done synthesizing module 'lsm6ds3tr_driver' (32#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/lsm6ds3tr_driver.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'sensor' (33#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/sensor.v:20]
+INFO: [Synth 8-6157] synthesizing module 'system_clk_module' [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/system_clk_module_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_clk_module' (34#1) [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/system_clk_module_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'eth_reset' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/eth_reset.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'eth_reset' (35#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/eth_reset.v:22]
+INFO: [Synth 8-6157] synthesizing module 'gmii_to_rgmii' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/gmii_to_rgmii.v:23]
+	Parameter TXC_DELAY_MODE bound to: 1 - type: integer 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/rgmii_rx.v:17]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35073]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: FALSE - type: string 
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (36#1) [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35073]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:34938]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (37#1) [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:34938]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (38#1) [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (39#1) [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/rgmii_rx.v:62]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35060]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (40#1) [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35060]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (41#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/rgmii_rx.v:17]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/rgmii_tx.v:23]
+	Parameter TXC_DELAY_MODE bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:40118]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 8.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 90.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (42#1) [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:40118]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:49791]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (43#1) [E:/1.tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:49791]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (44#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/rgmii_tx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gmii_to_rgmii' (45#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/gmii_to_rgmii.v:23]
+INFO: [Synth 8-6157] synthesizing module 'udp' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/udp.v:23]
+	Parameter BOARD_MAC bound to: 48'b000100100011010001010110011110001001101010111100 
+	Parameter BOARD_IP bound to: -1062705942 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062706031 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'udp_rx' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/udp_rx.v:23]
+	Parameter BOARD_MAC bound to: 48'b000100100011010001010110011110001001101010111100 
+	Parameter BOARD_IP bound to: -1062705942 - type: integer 
+	Parameter st_idle bound to: 7'b0000001 
+	Parameter st_preamble bound to: 7'b0000010 
+	Parameter st_eth_head bound to: 7'b0000100 
+	Parameter st_ip_head bound to: 7'b0001000 
+	Parameter st_udp_head bound to: 7'b0010000 
+	Parameter st_rx_data bound to: 7'b0100000 
+	Parameter st_rx_end bound to: 7'b1000000 
+	Parameter ETH_TYPE bound to: 16'b0000100000000000 
+	Parameter UDP_TYPE bound to: 8'b00010001 
+INFO: [Synth 8-6155] done synthesizing module 'udp_rx' (46#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/udp_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'udp_tx' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/udp_tx.v:23]
+	Parameter BOARD_MAC bound to: 48'b000100100011010001010110011110001001101010111100 
+	Parameter BOARD_IP bound to: -1062705942 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062706031 - type: integer 
+	Parameter st_idle bound to: 7'b0000001 
+	Parameter st_check_sum bound to: 7'b0000010 
+	Parameter st_preamble bound to: 7'b0000100 
+	Parameter st_eth_head bound to: 7'b0001000 
+	Parameter st_ip_head bound to: 7'b0010000 
+	Parameter st_tx_data bound to: 7'b0100000 
+	Parameter st_crc bound to: 7'b1000000 
+	Parameter ETH_TYPE bound to: 16'b0000100000000000 
+	Parameter MIN_DATA_NUM bound to: 16'b0000000000010010 
+INFO: [Synth 8-6155] done synthesizing module 'udp_tx' (47#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/udp_tx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/crc32_d8.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (48#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/crc32_d8.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'udp' (49#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/eth/udp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'udp_rec_decode' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/udp_rec_decode.v:5]
+	Parameter WORD_COUNT bound to: 16 - type: integer 
+	Parameter PACKET_BYTES bound to: 16'b0000000001000000 
+	Parameter WORD_USND bound to: 1431522884 - type: integer 
+	Parameter WORD_END bound to: 1162757153 - type: integer 
+	Parameter DEFAULT_DURATION bound to: 0 - type: integer 
+	Parameter DEFAULT_THRESHOLD bound to: 16'b0000111110100000 
+INFO: [Synth 8-6157] synthesizing module 'pulse_ctrl' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/pulse_ctrl.v:3]
+	Parameter SYSTEM_FREQ bound to: 200 - type: integer 
+	Parameter PERIOD_DIVIDEND bound to: 32'b00000000000000110000110101000000 
+	Parameter DUTY_DIVISOR bound to: 200 - type: integer 
+	Parameter CALC_IDLE bound to: 3'b000 
+	Parameter CALC_DIV_PERIOD bound to: 3'b001 
+	Parameter CALC_MUL_DUTY bound to: 3'b010 
+	Parameter CALC_ACCUM_DUTY bound to: 3'b011 
+	Parameter CALC_START_DUTY bound to: 3'b100 
+	Parameter CALC_DIV_DUTY bound to: 3'b101 
+	Parameter CALC_COMMIT bound to: 3'b110 
+INFO: [Synth 8-6155] done synthesizing module 'pulse_ctrl' (50#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/pulse_ctrl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'udp_rec_decode' (51#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/udp_rec_decode.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ae_event_capture' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_event_capture.v:40]
+	Parameter MAX_CH bound to: 16 - type: integer 
+	Parameter SAMPLE_W bound to: 16 - type: integer 
+	Parameter DATA_W bound to: 256 - type: integer 
+	Parameter FRAME_SAMPLES bound to: 8192 - type: integer 
+	Parameter PRE_SAMPLES bound to: 4096 - type: integer 
+	Parameter RING_AW bound to: 14 - type: integer 
+	Parameter FRAME_AW bound to: 13 - type: integer 
+	Parameter DESC_W bound to: 72 - type: integer 
+	Parameter AXIS_USER_W bound to: 64 - type: integer 
+	Parameter LIVE_RING_RD_LATENCY bound to: 4 - type: integer 
+	Parameter FRAME_BANK_RD_LATENCY bound to: 3 - type: integer 
+	Parameter AXIS_KEEP_W bound to: 32 - type: integer 
+	Parameter FRAME_CODE_8192 bound to: 3'b000 
+INFO: [Synth 8-6157] synthesizing module 'ae_udp_cfg_sync' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_udp_cfg_sync.v:4]
+	Parameter MAX_CH bound to: 16 - type: integer 
+	Parameter SAMPLE_W bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ae_udp_cfg_sync' (52#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_udp_cfg_sync.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ae_pulse_sync_toggle' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_pulse_sync_toggle.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ae_pulse_sync_toggle' (53#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_pulse_sync_toggle.v:2]
+INFO: [Synth 8-6157] synthesizing module 'adc_data_downsampler' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_adc_data_downsampler.v:5]
+	Parameter DATA_W bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adc_data_downsampler' (54#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_adc_data_downsampler.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ae_trigger_detect' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_trigger_detect.v:5]
+	Parameter MAX_CH bound to: 16 - type: integer 
+	Parameter SAMPLE_W bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ae_trigger_detect' (55#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_trigger_detect.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ae_cap_ctrl' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_cap_ctrl.v:5]
+	Parameter MAX_CH bound to: 16 - type: integer 
+	Parameter FRAME_SAMPLES bound to: 8192 - type: integer 
+	Parameter PRE_SAMPLES bound to: 4096 - type: integer 
+	Parameter RING_AW bound to: 14 - type: integer 
+	Parameter DESC_W bound to: 72 - type: integer 
+	Parameter CAP_FILL bound to: 3'b000 
+	Parameter CAP_ARMED bound to: 3'b001 
+	Parameter CAP_POST bound to: 3'b010 
+	Parameter CAP_WAIT_DDR bound to: 3'b011 
+	Parameter CAP_WAIT_UPLOAD bound to: 3'b100 
+	Parameter CNT_W bound to: 14 - type: integer 
+	Parameter PRE_CNT bound to: 14'b01000000000000 
+	Parameter POST_LEFT_INIT bound to: 14'b00111111111111 
+	Parameter DESC_USED_W bound to: 65 - type: integer 
+	Parameter DESC_PAD_W bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ae_cap_ctrl' (56#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_cap_ctrl.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ae_desc_fifo_ip' [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/ae_desc_fifo_ip_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ae_desc_fifo_ip' (57#1) [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/ae_desc_fifo_ip_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ae_live_ring_bram' [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/ae_live_ring_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ae_live_ring_bram' (58#1) [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/ae_live_ring_bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ae_copy_ctrl' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_copy_ctrl.v:5]
+	Parameter MAX_CH bound to: 16 - type: integer 
+	Parameter FRAME_SAMPLES bound to: 8192 - type: integer 
+	Parameter RING_AW bound to: 14 - type: integer 
+	Parameter FRAME_AW bound to: 13 - type: integer 
+	Parameter DESC_W bound to: 72 - type: integer 
+	Parameter RING_RD_LATENCY bound to: 4 - type: integer 
+	Parameter CP_IDLE bound to: 2'b00 
+	Parameter CP_FETCH_DESC bound to: 2'b01 
+	Parameter CP_COPY bound to: 2'b10 
+	Parameter CP_DRAIN bound to: 2'b11 
+	Parameter DESC_TRIG_LSB bound to: 14 - type: integer 
+	Parameter DESC_MASK_LSB bound to: 46 - type: integer 
+INFO: [Synth 8-226] default block is never used [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_copy_ctrl.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'ae_copy_ctrl' (59#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_copy_ctrl.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ae_frame_bank_bram' [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/ae_frame_bank_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ae_frame_bank_bram' (60#1) [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/ae_frame_bank_bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ae_axis_stream_ctrl' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_axis_stream_ctrl.v:7]
+	Parameter MAX_CH bound to: 16 - type: integer 
+	Parameter DATA_W bound to: 256 - type: integer 
+	Parameter FRAME_SAMPLES bound to: 8192 - type: integer 
+	Parameter FRAME_AW bound to: 13 - type: integer 
+	Parameter AXIS_USER_W bound to: 64 - type: integer 
+	Parameter FRAME_RD_LATENCY bound to: 3 - type: integer 
+	Parameter ST_IDLE bound to: 1'b0 
+	Parameter ST_SEND bound to: 1'b1 
+INFO: [Synth 8-226] default block is never used [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_axis_stream_ctrl.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'ae_axis_stream_ctrl' (61#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_axis_stream_ctrl.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ae_event_capture' (62#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_event_capture/ae_event_capture.v:40]
+INFO: [Synth 8-6157] synthesizing module 'event_time_keeper' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/event_time_keeper.v:3]
+	Parameter CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter SEC_CNT_W bound to: 28 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'event_time_keeper' (63#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/event_time_keeper.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ae_ddr_axis_event_buffer' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_ddr/ae_ddr_axis_event_buffer.v:3]
+	Parameter FRAME_SAMPLES bound to: 8192 - type: integer 
+	Parameter PRE_SAMPLES bound to: 4096 - type: integer 
+	Parameter POST_SAMPLES bound to: 4096 - type: integer 
+	Parameter HEADER_WORDS bound to: 4 - type: integer 
+	Parameter EVENT_BASE_ADDR bound to: 0 - type: integer 
+	Parameter DESC_COUNT bound to: 1024 - type: integer 
+	Parameter SIM_AXI_MEM bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ae_ddr_event_buffer' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_ddr/ae_ddr_event_buffer.v:3]
+	Parameter FRAME_SAMPLES bound to: 8192 - type: integer 
+	Parameter PRE_SAMPLES bound to: 4096 - type: integer 
+	Parameter POST_SAMPLES bound to: 4096 - type: integer 
+	Parameter HEADER_WORDS bound to: 4 - type: integer 
+	Parameter EVENT_BASE_ADDR bound to: 0 - type: integer 
+	Parameter DESC_COUNT bound to: 1024 - type: integer 
+	Parameter SIM_AXI_MEM bound to: 0 - type: integer 
+	Parameter AXI_DATA_W bound to: 256 - type: integer 
+	Parameter AXI_ADDR_W bound to: 30 - type: integer 
+	Parameter FRAME_WORDS bound to: 8196 - type: integer 
+	Parameter FRAME_BYTES bound to: 262272 - type: integer 
+	Parameter EVENT_SLOT_BYTES bound to: 266240 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ddr3' [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/ddr3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddr3' (64#1) [E:/AE_project/FPGA/AE_project/.Xil/Vivado-564800-Adam/realtime/ddr3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ae_event_ingress' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_ddr/ae_event_ingress.v:3]
+	Parameter FRAME_SAMPLES bound to: 8192 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ae_event_ingress' (65#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_ddr/ae_event_ingress.v:3]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized0' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2142]
+	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 256 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 384 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0707 - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 256 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 16 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_ASYNC bound to: 16'b0000011100000111 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+	Parameter COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 256 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 384 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0707 - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 256 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 16 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 2 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 512 - type: integer 
+	Parameter FIFO_SIZE bound to: 131072 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 8 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 9 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 9 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 9 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b0 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter READ_MODE_LL bound to: 1 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 382 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 14 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 7 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 507 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 507 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 10 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 10 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0000011100000111 
+	Parameter EN_OF bound to: 1'b1 
+	Parameter EN_PF bound to: 1'b1 
+	Parameter EN_WDC bound to: 1'b1 
+	Parameter EN_AF bound to: 1'b0 
+	Parameter EN_WACK bound to: 1'b0 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b1 
+	Parameter EN_PE bound to: 1'b1 
+	Parameter EN_RDC bound to: 1'b1 
+	Parameter EN_AE bound to: 1'b0 
+	Parameter EN_DVLD bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 131072 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 2 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 256 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 256 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 256 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 9 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 256 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 256 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 256 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 9 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 256 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 256 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 256 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 256 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 512 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 256 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 256 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: no - type: string 
+	Parameter rsta_loop_iter bound to: 256 - type: integer 
+	Parameter rstb_loop_iter bound to: 256 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 256 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized2' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized2' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized1' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+	Parameter REG_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized1' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized3' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized3' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized2' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+	Parameter REG_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized2' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized4' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized4' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+	Parameter COUNTER_WIDTH bound to: 10 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+	Parameter COUNTER_WIDTH bound to: 9 - type: integer 
+	Parameter RESET_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+	Parameter COUNTER_WIDTH bound to: 9 - type: integer 
+	Parameter RESET_VALUE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized0' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2142]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized1' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2142]
+	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 256 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0707 - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 256 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 5 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_ASYNC bound to: 16'b0000011100000111 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+	Parameter COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 256 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0707 - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 256 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 5 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 2 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 16 - type: integer 
+	Parameter FIFO_SIZE bound to: 4096 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 8 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 4 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b0 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter READ_MODE_LL bound to: 1 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 3 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 7 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 11 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 11 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 5 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 5 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0000011100000111 
+	Parameter EN_OF bound to: 1'b1 
+	Parameter EN_PF bound to: 1'b1 
+	Parameter EN_WDC bound to: 1'b1 
+	Parameter EN_AF bound to: 1'b0 
+	Parameter EN_WACK bound to: 1'b0 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b1 
+	Parameter EN_PE bound to: 1'b1 
+	Parameter EN_RDC bound to: 1'b1 
+	Parameter EN_AE bound to: 1'b0 
+	Parameter EN_DVLD bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 4096 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 2 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 256 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 256 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 256 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 4 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 256 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 256 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 256 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 4 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 256 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 256 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 256 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 256 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 16 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 256 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 256 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: no - type: string 
+	Parameter rsta_loop_iter bound to: 256 - type: integer 
+	Parameter rstb_loop_iter bound to: 256 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 256 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized5' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized5' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized3' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+	Parameter REG_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized3' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized6' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized6' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized4' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+	Parameter REG_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized4' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized7' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized7' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized6' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+	Parameter COUNTER_WIDTH bound to: 5 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized6' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized7' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter RESET_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized7' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized8' [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter RESET_VALUE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized8' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized1' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized1' (65#1) [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2142]
+INFO: [Synth 8-6157] synthesizing module 'ae_ddr_axi_writer' [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_ddr/ae_ddr_axi_writer.v:3]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter FRAME_SAMPLES bound to: 8192 - type: integer 
+	Parameter PRE_SAMPLES bound to: 4096 - type: integer 
+	Parameter POST_SAMPLES bound to: 4096 - type: integer 
+	Parameter HEADER_WORDS bound to: 4 - type: integer 
+	Parameter AXI_ADDR_W bound to: 30 - type: integer 
+	Parameter AXI_DATA_W bound to: 256 - type: integer 
+	Parameter DESC_COUNT bound to: 1024 - type: integer 
+	Parameter EVENT_BASE_ADDR bound to: 0 - type: integer 
+	Parameter EVENT_SLOT_BYTES bound to: 266240 - type: integer 
+	Parameter AXI_BYTES_PER_BEAT bound to: 32 - type: integer 
+	Parameter FRAME_WORDS bound to: 8196 - type: integer 
+	Parameter MAX_BURST_BEATS bound to: 128 - type: integer 
+	Parameter SLOT_IDX_W bound to: 10 - type: integer 
+	Parameter EVENT_SLOT_BYTES_AW bound to: 30'b000000000001000001000000000000 
+	Parameter ST_IDLE bound to: 3'b000 
+	Parameter ST_META_POP bound to: 3'b001 
+	Parameter ST_AW_REQ bound to: 3'b010 
+	Parameter ST_WDATA bound to: 3'b011 
+	Parameter ST_BRESP bound to: 3'b100 
+	Parameter ST_DESC_WR bound to: 3'b101 
+	Parameter HEADER_WORDS bound to: 4 - type: integer 
+	Parameter FRAME_SAMPLES bound to: 8192 - type: integer 
+	Parameter PRE_SAMPLES bound to: 4096 - type: integer 
+	Parameter POST_SAMPLES bound to: 4096 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ae_event_header_gen' (66#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_ddr/ae_event_header_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ae_ddr_axi_writer' (67#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_ddr/ae_ddr_axi_writer.v:3]
+	Parameter DESC_COUNT bound to: 1024 - type: integer 
+	Parameter DESC_IDX_W bound to: 10 - type: integer 
+	Parameter ST_IDLE bound to: 2'b00 
+	Parameter ST_PRIME bound to: 2'b01 
+	Parameter ST_SCAN bound to: 2'b10 
+	Parameter ST_DONE bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_ddr/ae_event_desc_table.v:63]
+INFO: [Synth 8-226] default block is never used [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_ddr/ae_event_desc_table.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'ae_event_desc_table' (68#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_ddr/ae_event_desc_table.v:3]
+	Parameter AXI_ADDR_W bound to: 30 - type: integer 
+	Parameter MAX_BURST_BEATS bound to: 128 - type: integer 
+	Parameter AXI_BYTES_PER_BEAT bound to: 32 - type: integer 
+	Parameter ST_IDLE bound to: 3'b000 
+	Parameter ST_QUERY_REQ bound to: 3'b001 
+	Parameter ST_QUERY_WAIT bound to: 3'b010 
+	Parameter ST_AR_REQ bound to: 3'b011 
+	Parameter ST_RDATA bound to: 3'b100 
+	Parameter ST_DONE bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'ae_ddr_axi_reader' (69#1) [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/ae_ddr/ae_ddr_axi_reader.v:3]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+	Parameter UDP_PKT_MAX_BYTES bound to: 1024 - type: integer 
+	Parameter SENSOR_PKT_BYTES bound to: 64 - type: integer 
+	Parameter EVENT_HDR_BYTES bound to: 128 - type: integer 
+	Parameter TRANSPORT_HDR_BYTES bound to: 32 - type: integer 
+	Parameter UNIFIED_HDR_BYTES bound to: 224 - type: integer 
+	Parameter AE_PAYLOAD_BYTES_MAX bound to: 800 - type: integer 
+	Parameter UNIFIED_HDR_BYTES_U16 bound to: 224 - type: integer 
+	Parameter AE_PAYLOAD_BYTES_MAX_U16 bound to: 800 - type: integer 
+	Parameter EVENT_HDR_BYTES_U32 bound to: 128 - type: integer 
+	Parameter SYS_IDLE bound to: 4'b0000 
+	Parameter SYS_COLLECT_HDR bound to: 4'b0001 
+	Parameter SYS_PREP_PKT bound to: 4'b0010 
+	Parameter SYS_PKT_META bound to: 4'b0011 
+	Parameter SYS_PKT_SENSOR bound to: 4'b0100 
+	Parameter SYS_PKT_EVT_HDR bound to: 4'b0101 
+	Parameter SYS_PKT_PAYLOAD bound to: 4'b0110 
+	Parameter SYS_PKT_COMMIT bound to: 4'b0111 
+	Parameter SYS_READ_TIMEOUT_CYCLES bound to: 200000000 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 12 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0000 - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 2 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_ASYNC bound to: 16'b0000000000000000 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+	Parameter COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 12 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0000 - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 2 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 0 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 16 - type: integer 
+	Parameter FIFO_SIZE bound to: 512 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 5 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 4 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b0 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter READ_MODE_LL bound to: 1 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 10 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 0 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 7 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 11 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 11 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 5 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 5 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0000000000000000 
+	Parameter EN_OF bound to: 1'b0 
+	Parameter EN_PF bound to: 1'b0 
+	Parameter EN_WDC bound to: 1'b0 
+	Parameter EN_AF bound to: 1'b0 
+	Parameter EN_WACK bound to: 1'b0 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b0 
+	Parameter EN_PE bound to: 1'b0 
+	Parameter EN_RDC bound to: 1'b0 
+	Parameter EN_AE bound to: 1'b0 
+	Parameter EN_DVLD bound to: 1'b0 
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 512 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 0 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 4 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 32 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 32 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 4 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 32 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 16 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 32 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 32 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 32 - type: integer 
+	Parameter rstb_loop_iter bound to: 32 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:488]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
+	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 256 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 258 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 220 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0002 - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 258 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 8 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_ASYNC bound to: 16'b0000000000000010 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+	Parameter COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 256 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 258 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 220 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0002 - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 258 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 8 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 2 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 256 - type: integer 
+	Parameter FIFO_SIZE bound to: 66048 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 9 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 8 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 8 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 8 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b0 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter READ_MODE_LL bound to: 1 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 218 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 6 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 7 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 251 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 251 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 9 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 9 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0000000000000010 
+	Parameter EN_OF bound to: 1'b0 
+	Parameter EN_PF bound to: 1'b1 
+	Parameter EN_WDC bound to: 1'b0 
+	Parameter EN_AF bound to: 1'b0 
+	Parameter EN_WACK bound to: 1'b0 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b0 
+	Parameter EN_PE bound to: 1'b0 
+	Parameter EN_RDC bound to: 1'b0 
+	Parameter EN_AE bound to: 1'b0 
+	Parameter EN_DVLD bound to: 1'b0 
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 66048 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 2 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 258 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 258 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 258 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 8 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 258 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 258 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 258 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 8 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 258 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 258 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 258 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 258 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 256 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 258 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 258 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 8 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 8 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 8 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 8 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: no - type: string 
+	Parameter rsta_loop_iter bound to: 260 - type: integer 
+	Parameter rstb_loop_iter bound to: 260 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 258 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter REG_WIDTH bound to: 8 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
+	Parameter COUNTER_WIDTH bound to: 9 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+	Parameter COUNTER_WIDTH bound to: 8 - type: integer 
+	Parameter RESET_VALUE bound to: 1 - type: integer 
+	Parameter COUNTER_WIDTH bound to: 8 - type: integer 
+	Parameter RESET_VALUE bound to: 2 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 8192 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 7800 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1402 - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 14 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 32 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_ASYNC bound to: 16'b0001010000000010 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+	Parameter COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 8192 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 7800 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1402 - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 14 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 32 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 2 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 8192 - type: integer 
+	Parameter FIFO_SIZE bound to: 65536 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 3 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 13 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 13 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 13 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b0 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter READ_MODE_LL bound to: 1 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 7798 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 30 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 7 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 8187 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 8187 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 14 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 14 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0001010000000010 
+	Parameter EN_OF bound to: 1'b0 
+	Parameter EN_PF bound to: 1'b1 
+	Parameter EN_WDC bound to: 1'b0 
+	Parameter EN_AF bound to: 1'b0 
+	Parameter EN_WACK bound to: 1'b0 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b0 
+	Parameter EN_PE bound to: 1'b0 
+	Parameter EN_RDC bound to: 1'b1 
+	Parameter EN_AE bound to: 1'b0 
+	Parameter EN_DVLD bound to: 1'b1 
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 65536 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 2 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 8 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 8 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 13 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 8 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 8 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 13 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 8 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 8 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 8 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 8 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 8192 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 8 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 8 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 13 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 13 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 13 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 13 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: no - type: string 
+	Parameter rsta_loop_iter bound to: 8 - type: integer 
+	Parameter rstb_loop_iter bound to: 8 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 8 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 13 - type: integer 
+	Parameter REG_WIDTH bound to: 13 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 14 - type: integer 
+	Parameter REG_WIDTH bound to: 14 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 14 - type: integer 
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
+	Parameter COUNTER_WIDTH bound to: 14 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+	Parameter COUNTER_WIDTH bound to: 13 - type: integer 
+	Parameter RESET_VALUE bound to: 1 - type: integer 
+	Parameter COUNTER_WIDTH bound to: 13 - type: integer 
+	Parameter RESET_VALUE bound to: 2 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 64 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 60 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0000 - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 2 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_ASYNC bound to: 16'b0000000000000000 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+	Parameter COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 64 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 60 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0000 - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 2 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 0 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 64 - type: integer 
+	Parameter FIFO_SIZE bound to: 1024 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 4 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 6 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 6 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 6 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b0 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter READ_MODE_LL bound to: 1 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 58 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 0 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 7 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 59 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 59 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 7 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 7 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0000000000000000 
+	Parameter EN_OF bound to: 1'b0 
+	Parameter EN_PF bound to: 1'b0 
+	Parameter EN_WDC bound to: 1'b0 
+	Parameter EN_AF bound to: 1'b0 
+	Parameter EN_WACK bound to: 1'b0 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b0 
+	Parameter EN_PE bound to: 1'b0 
+	Parameter EN_RDC bound to: 1'b0 
+	Parameter EN_AE bound to: 1'b0 
+	Parameter EN_DVLD bound to: 1'b0 
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 1024 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 0 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 16 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 16 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 6 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 16 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 16 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 6 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 16 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 16 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 16 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 16 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 64 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 16 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 16 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 16 - type: integer 
+	Parameter rstb_loop_iter bound to: 16 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 16 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:488]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
+INFO: [Synth 8-226] default block is never used [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
+INFO: [Synth 8-226] default block is never used [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/udp_event_sensor_tx.v:267]
+INFO: [Synth 8-226] default block is never used [E:/AE_project/FPGA/AE_project/AE_project.srcs/sources_1/new/udp_event_sensor_tx.v:238]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1469.262 ; gain = 347.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1469.262 ; gain = 347.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1469.262 ; gain = 347.934
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/system_clk_module/system_clk_module.dcp' for cell 'system_clk_module_inst'
+INFO: [Project 1-454] Reading design checkpoint 'e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/adc_dclk_in/adc_dclk_in.dcp' for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/get_adc_data_inst1/adc_dclk_in_inst'
+INFO: [Project 1-454] Reading design checkpoint 'e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/fir_500k_lp.dcp' for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[0].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp'
+INFO: [Project 1-454] Reading design checkpoint 'e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ae_desc_fifo_ip/ae_desc_fifo_ip.dcp' for cell 'ae_event_capture_inst/u_ae_desc_fifo_ip'
+INFO: [Project 1-454] Reading design checkpoint 'e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ae_live_ring_bram/ae_live_ring_bram.dcp' for cell 'ae_event_capture_inst/ae_live_ring_bram_inst'
+INFO: [Project 1-454] Reading design checkpoint 'e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ae_frame_bank_bram/ae_frame_bank_bram.dcp' for cell 'ae_event_capture_inst/ae_frame_bank_inst0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ddr3/ddr3.dcp' for cell 'ae_ddr_axis_event_buffer_inst/u_ae_ddr_event_buffer/gen_mig_ddr3.u_ddr3'
+Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1575.184 ; gain = 34.426
+INFO: [Netlist 29-17] Analyzing 1329 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 6 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 10 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[0].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[0].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[1].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[1].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[2].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[2].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[3].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[3].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[4].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[4].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[5].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[5].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[6].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[6].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[7].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc1_filter_8ch/g_filter_ch[7].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[0].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[0].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[1].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[1].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[2].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[2].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[3].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[3].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[4].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[4].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[5].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[5].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[6].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[6].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[7].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.gen/sources_1/ip/fir_500k_lp/constraints/fir_compiler_v7_2.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/adc_filter_chain_inst/u_adc2_filter_8ch/g_filter_ch[7].u_adc_filter_channel/u_adc_filter_fir_500k_lp_wrap/u_fir_500k_lp/U0'
+Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/system_clk_module/system_clk_module_board.xdc] for cell 'system_clk_module_inst/inst'
+Finished Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/system_clk_module/system_clk_module_board.xdc] for cell 'system_clk_module_inst/inst'
+Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/system_clk_module/system_clk_module.xdc] for cell 'system_clk_module_inst/inst'
+Finished Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/system_clk_module/system_clk_module.xdc] for cell 'system_clk_module_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/system_clk_module/system_clk_module.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/adc_dclk_in/adc_dclk_in_board.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/get_adc_data_inst1/adc_dclk_in_inst/inst'
+Finished Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/adc_dclk_in/adc_dclk_in_board.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/get_adc_data_inst1/adc_dclk_in_inst/inst'
+Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/adc_dclk_in/adc_dclk_in_board.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/get_adc_data_inst2/adc_dclk_in_inst/inst'
+Finished Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/adc_dclk_in/adc_dclk_in_board.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/get_adc_data_inst2/adc_dclk_in_inst/inst'
+Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/adc_dclk_in/adc_dclk_in.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/get_adc_data_inst1/adc_dclk_in_inst/inst'
+Finished Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/adc_dclk_in/adc_dclk_in.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/get_adc_data_inst1/adc_dclk_in_inst/inst'
+Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/adc_dclk_in/adc_dclk_in.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/get_adc_data_inst2/adc_dclk_in_inst/inst'
+Finished Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/adc_dclk_in/adc_dclk_in.xdc] for cell 'gen_adc_preprocess_real.adc_data_preprocess_inst/get_adc_data_inst2/adc_dclk_in_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/adc_dclk_in/adc_dclk_in.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ae_desc_fifo_ip/ae_desc_fifo_ip.xdc] for cell 'ae_event_capture_inst/u_ae_desc_fifo_ip/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ae_desc_fifo_ip/ae_desc_fifo_ip.xdc] for cell 'ae_event_capture_inst/u_ae_desc_fifo_ip/U0'
+Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ddr3/ddr3/user_design/constraints/ddr3.xdc] for cell 'ae_ddr_axis_event_buffer_inst/u_ae_ddr_event_buffer/gen_mig_ddr3.u_ddr3'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ddr3/ddr3/user_design/constraints/ddr3.xdc:495]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ddr3/ddr3/user_design/constraints/ddr3.xdc:502]
+Finished Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ddr3/ddr3/user_design/constraints/ddr3.xdc] for cell 'ae_ddr_axis_event_buffer_inst/u_ae_ddr_event_buffer/gen_mig_ddr3.u_ddr3'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ddr3/ddr3/user_design/constraints/ddr3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+write_xdc: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2055.820 ; gain = 12.297
+Parsing XDC File [E:/AE_project/FPGA/AE_project/AE_project.srcs/constrs_1/new/demo.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk_p' already exists, overwriting the previous clock with the same name. [E:/AE_project/FPGA/AE_project/AE_project.srcs/constrs_1/new/demo.xdc:9]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -hier -filter {NAME =~ *eth_rxc_IBUF_BUFG*}'. [E:/AE_project/FPGA/AE_project/AE_project.srcs/constrs_1/new/demo.xdc:149]
+WARNING: [Constraints 18-619] A clock with name 'adc1_dclk_p' already exists, overwriting the previous clock with the same name. [E:/AE_project/FPGA/AE_project/AE_project.srcs/constrs_1/new/demo.xdc:210]
+WARNING: [Constraints 18-619] A clock with name 'adc2_dclk_p' already exists, overwriting the previous clock with the same name. [E:/AE_project/FPGA/AE_project/AE_project.srcs/constrs_1/new/demo.xdc:260]
+WARNING: [Vivado 12-508] No pins matched 'get_adc_data_inst1/adc_dclk_in_inst/inst/mmcm_adv_inst/CLKOUT1'. [E:/AE_project/FPGA/AE_project/AE_project.srcs/constrs_1/new/demo.xdc:290]
+WARNING: [Vivado 12-508] No pins matched 'get_adc_data_inst2/adc_dclk_in_inst/inst/mmcm_adv_inst/CLKOUT1'. [E:/AE_project/FPGA/AE_project/AE_project.srcs/constrs_1/new/demo.xdc:291]
+Finished Parsing XDC File [E:/AE_project/FPGA/AE_project/AE_project.srcs/constrs_1/new/demo.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/AE_project/FPGA/AE_project/AE_project.srcs/constrs_1/new/demo.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/AE_project/FPGA/AE_project/AE_project.srcs/constrs_1/new/demo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ae_desc_fifo_ip/ae_desc_fifo_ip_clocks.xdc] for cell 'ae_event_capture_inst/u_ae_desc_fifo_ip/U0'
+Finished Parsing XDC File [e:/AE_project/FPGA/AE_project/AE_project.gen/sources_1/ip/ae_desc_fifo_ip/ae_desc_fifo_ip_clocks.xdc] for cell 'ae_event_capture_inst/u_ae_desc_fifo_ip/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1715] 3 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 2055.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 270 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 6 instances
+  IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 4 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 32 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  OBUFDS => OBUFDS: 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 224 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:35 ; elapsed = 00:01:30 . Memory (MB): peak = 2055.828 ; gain = 934.500
+258 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:01:41 . Memory (MB): peak = 2055.828 ; gain = 934.500
+# close_design
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Wed May 13 20:04:25 2026...

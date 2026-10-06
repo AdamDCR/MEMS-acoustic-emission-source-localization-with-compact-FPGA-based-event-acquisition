@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 13 19:59:12 2026
+# Process ID: 565284
+# Current directory: E:/AE_project/FPGA/AE_project
+# Command line: vivado.exe -mode batch -source E:\AE_project\FPGA\AE_project\run_top_elab_check.tcl
+# Log file: E:/AE_project/FPGA/AE_project/vivado.log
+# Journal file: E:/AE_project/FPGA/AE_project\vivado.jou
+#-----------------------------------------------------------
+source {E:\AE_project\FPGA\AE_project\run_top_elab_check.tcl}
+# open_project {E:/AE_project/FPGA/AE_project/AE_project.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/1.tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1121.277 ; gain = 0.000
+# set fir_ip {E:/AE_project/FPGA/adc_data_preprocess/adc_data_preprocess.srcs/sources_1/ip/fir_500k_lp/fir_500k_lp.xci}
+# if {[llength [get_files -quiet $fir_ip]] == 0} {
+#     add_files -norecurse $fir_ip
+# }
+# generate_target simulation [get_files $fir_ip]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'fir_500k_lp'. Target already exists and is up to date.
+# add_files -fileset sim_1 -norecurse {E:/AE_project/FPGA/AE_project/AE_project.srcs/sim_1/new/tb_top_smoke.v}
+WARNING: [filemgmt 56-12] File 'E:/AE_project/FPGA/AE_project/AE_project.srcs/sim_1/new/tb_top_smoke.v' cannot be added to the project because it already exists in the project, skipping this file
+# set_property top tb_top_smoke [get_filesets sim_1]
+# set_property top_lib xil_defaultlib [get_filesets sim_1]
+# update_compile_order -fileset sources_1
+# update_compile_order -fileset sim_1
+update_compile_order: Time (s): cpu = 00:00:00 ; elapsed = 00:01:47 . Memory (MB): peak = 1121.277 ; gain = 0.000
+# set_property xsim.simulate.runtime {20 us} [get_filesets sim_1]
+# launch_simulation -simset sim_1 -mode behavioral
+Command: launch_simulation -simset sim_1 -mode behavioral
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/AE_project/FPGA/AE_project/AE_project.sim/sim_1/behav/xsim/simulate.log"
+    while executing
+"launch_simulation -simset sim_1 -mode behavioral"
+    (file "E:\AE_project\FPGA\AE_project\run_top_elab_check.tcl" line 13)
+INFO: [Common 17-206] Exiting Vivado at Wed May 13 20:01:24 2026...

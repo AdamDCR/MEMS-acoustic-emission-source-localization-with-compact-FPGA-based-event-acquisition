@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 15 22:32:16 2026
+# Process ID: 84744
+# Current directory: E:/AE_project/FPGA/AE_project/AE_project.runs/ILA_FILTERED_DATA_synth_1
+# Command line: vivado.exe -log ILA_FILTERED_DATA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ILA_FILTERED_DATA.tcl
+# Log file: E:/AE_project/FPGA/AE_project/AE_project.runs/ILA_FILTERED_DATA_synth_1/ILA_FILTERED_DATA.vds
+# Journal file: E:/AE_project/FPGA/AE_project/AE_project.runs/ILA_FILTERED_DATA_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ILA_FILTERED_DATA.tcl -notrace

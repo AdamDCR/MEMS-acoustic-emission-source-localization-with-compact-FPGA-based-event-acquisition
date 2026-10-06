@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 15 20:13:30 2026
+# Process ID: 51552
+# Current directory: E:/AE_project/FPGA/AE_project/AE_project.runs/ILA_ADC_DRIVE_synth_1
+# Command line: vivado.exe -log ILA_ADC_DRIVE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ILA_ADC_DRIVE.tcl
+# Log file: E:/AE_project/FPGA/AE_project/AE_project.runs/ILA_ADC_DRIVE_synth_1/ILA_ADC_DRIVE.vds
+# Journal file: E:/AE_project/FPGA/AE_project/AE_project.runs/ILA_ADC_DRIVE_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ILA_ADC_DRIVE.tcl -notrace

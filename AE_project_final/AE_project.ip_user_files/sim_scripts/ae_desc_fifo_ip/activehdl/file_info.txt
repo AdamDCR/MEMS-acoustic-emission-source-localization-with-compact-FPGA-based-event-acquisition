@@ -1,0 +1,9 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../../1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_memory.sv,systemverilog,xpm,../../../../../../../1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_fifo.sv,systemverilog,xpm,../../../../../../../1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../1.tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd,
+fifo_generator_vlog_beh.v,verilog,fifo_generator_v13_2_5,../../../ipstatic/simulation/fifo_generator_vlog_beh.v,
+fifo_generator_v13_2_rfs.vhd,vhdl,fifo_generator_v13_2_5,../../../ipstatic/hdl/fifo_generator_v13_2_rfs.vhd,
+fifo_generator_v13_2_rfs.v,verilog,fifo_generator_v13_2_5,../../../ipstatic/hdl/fifo_generator_v13_2_rfs.v,
+ae_desc_fifo_ip.v,verilog,xil_defaultlib,../../../../AE_project.gen/sources_1/ip/ae_desc_fifo_ip/sim/ae_desc_fifo_ip.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

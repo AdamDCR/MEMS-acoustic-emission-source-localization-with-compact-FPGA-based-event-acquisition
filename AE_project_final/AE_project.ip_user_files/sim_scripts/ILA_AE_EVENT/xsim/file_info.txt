@@ -1,0 +1,2 @@
+ILA_AE_EVENT.v,verilog,xil_defaultlib,../../../../AE_project.gen/sources_1/ip/ILA_AE_EVENT/sim/ILA_AE_EVENT.v,incdir="../../../../AE_project.gen/sources_1/ip/ILA_AE_EVENT/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

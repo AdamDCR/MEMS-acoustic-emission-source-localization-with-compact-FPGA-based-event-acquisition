@@ -1,0 +1,2 @@
+ILA_ADC_DRIVE.v,verilog,xil_defaultlib,../../../../AE_project.gen/sources_1/ip/ILA_ADC_DRIVE/sim/ILA_ADC_DRIVE.v,incdir="../../../../AE_project.gen/sources_1/ip/ILA_ADC_DRIVE/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

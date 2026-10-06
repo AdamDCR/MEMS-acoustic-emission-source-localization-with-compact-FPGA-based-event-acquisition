@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../AE_project.gen/sources_1/ip/ae_desc_fifo_ip/sim/ae_desc_fifo_ip.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

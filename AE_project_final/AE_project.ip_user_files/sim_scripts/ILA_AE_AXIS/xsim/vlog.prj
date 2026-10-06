@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "../../../../AE_project.gen/sources_1/ip/ILA_AE_AXIS/hdl/verilog" \
+"../../../../AE_project.gen/sources_1/ip/ILA_AE_AXIS/sim/ILA_AE_AXIS.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
