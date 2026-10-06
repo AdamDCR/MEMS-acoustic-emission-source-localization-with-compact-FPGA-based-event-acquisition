@@ -1,0 +1,133 @@
+{
+  "file": "4channel_0.25_0.2.csv",
+  "created_at": "2026-05-23T16:36:21",
+  "format": "sample_index,time_us,CH01_S1,CH02_S2,CH03_S3,CH04_S4",
+  "filename_rule": "Nchannel_x_y.csv",
+  "channel_count": 4,
+  "channel_mask_hex": "0x000F",
+  "saved_channels": [
+    "CH01",
+    "CH02",
+    "CH03",
+    "CH04"
+  ],
+  "sensor_names": [
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+  ],
+  "sensor_names_all_ch1_to_ch16": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S9",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16"
+  ],
+  "target_xy_m": [
+    0.25,
+    0.2
+  ],
+  "sensor_xy_m_all_ch1_to_ch16": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "sensor_xy_m_saved_channels": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "event_seq": 0,
+  "sample_rate_hz": 10000000.0,
+  "frame_samples": 8192,
+  "pre_samples": 2048,
+  "post_samples": 6144,
+  "trigger_offset": 2048,
+  "event_payload_total_bytes": 262144
+}
